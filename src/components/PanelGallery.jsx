@@ -4,7 +4,7 @@ import Panel from "./Panel";
 const PanelGallery = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const handelClick = (index) => {
+  const handleClick = (index) => {
     setActiveIndex(index);
   };
   return (
@@ -15,7 +15,7 @@ const PanelGallery = () => {
           title={panel.title}
           imagenUrl={panel.imageUrl}
           isActive={index === activeIndex}
-          onClick={() => handelClick(index)}
+          onClick={() => handleClick(index)}
         />
       ))}
     </main>
